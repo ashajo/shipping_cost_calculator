@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nav Page</title>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<header>
+    <nav th:fragment="nav_fragment"  class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">OnlineShop</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" th:href="@{/}">Home</a></li>
+                <li><a href="#" th:href="@{/demo}">Demo Page</a></li>
+                <li><a href="#">Contact Page</a></li>
+                <li><a href="#" th:href="@{/list}">Product List</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>

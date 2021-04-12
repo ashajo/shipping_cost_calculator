@@ -11,7 +11,7 @@ public class ShippingController {
     }
         @GetMapping("/showlist")
     public String showBoxList(){
-        return "ShowBoxList";
+        return "showBoxList";
 
 
     }
